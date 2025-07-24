@@ -1,0 +1,66 @@
+*{
+    position: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+nav{
+    width: 100%;
+    height: 20%;
+    align-items: center;
+    background-color: rgb(65, 148, 65);
+}
+
+#headername{
+    text-align: center;
+    color: white;
+    font-size: 50px;
+}
+#name-p{
+    font-size: 20px;
+}
+
+#div2{
+    margin-top: 20px;
+    background-color: grey;
+    height: 20%;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+}
+
+
+main{
+    margin: 30px;
+}
+
+.card{
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.card h3{
+    font-size: 30px;
+    font-weight: 700;
+    color: rgb(6, 155, 255);
+}
+
+
+.navbar a:not(:last-child)::after {
+      content: "";
+      position: absolute;
+      right: -10px;
+      top: 0;
+      height: 100%;
+      width: 1px;
+      background-color: #444;
+ }
+
+

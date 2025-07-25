@@ -20,9 +20,6 @@
 
 // });
 
-
-
-
 // Task 3
 
 // var inps = document.querySelectorAll('input[type="text"]');
@@ -40,10 +37,7 @@
 //     }
 // });
 
-
-
-// Task 4 
-
+// Task 4
 
 // var h1 = document.querySelector('h1');
 // var start = document.querySelector('#start')
@@ -61,7 +55,6 @@
 // end.addEventListener('click' , function(){
 //     clearInterval(int)
 // })
-
 
 // Task 5
 
@@ -87,7 +80,6 @@
 //     }
 // });
 
-
 // Task 6
 
 // var button = document.querySelectorAll('.nav-btn')
@@ -110,6 +102,65 @@
 //     })
 // }
 
-
-
 //Task 7
+
+// var p = document.querySelector("#progressbar")
+
+// var count =0;
+// var int  = setInterval(function(){
+//     if(count === 100){
+//         clearInterval(int);
+//     }
+//     count++;
+//     p.style.width = count+'%';
+// }, 200)
+
+// Task 8
+// const data = [
+//   {
+//     name: "Harshit",
+//     src: "https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg"
+//   },
+//   {
+//     name: "Venkatesh",
+//     src: "https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg"
+//   },
+//   {
+//     name: "Bhavik",
+//     src: "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg"
+//   }
+// ];
+
+// const input = document.querySelector("input");
+// const peopleDiv = document.querySelector("#people");
+
+// function displayPeople(list) {
+//   let html = "";
+
+//   if (list.length === 0) {
+//     html = "<p>No people found.</p>";
+//   } else {
+//     list.forEach((person) => {
+//       html += `<div class="person-card">
+//         <div class="avatar">
+//           <img src="${person.src}" alt="${person.name}" />
+//         </div>
+//         <h2>${person.name}</h2>
+//       </div>`;
+//     });
+//   }
+
+//   peopleDiv.innerHTML = html;
+// }
+
+// // Show all on load
+// displayPeople(data);
+
+// // Filter on input
+// input.addEventListener("input", function () {
+//   const search = input.value.toLowerCase();
+//   const filtered = data.filter((p) =>
+//     p.name.toLowerCase().startsWith(search)
+//   );
+//   displayPeople(filtered);
+// });

@@ -1,9 +1,13 @@
+import { motion } from "framer-motion";
 import React from "react";
+
 import { FaArrowRight } from "react-icons/fa6";
 
-function Card({ width , start , para , btn ,hover}) {
+function Card({ width , start , para , btn ,hover=false}) {
   return (
-    <div className={`hover:${hover} bg-zinc-800 rounded-lg px-7 py-5 flex flex-col gap-2 ${width}`}>
+    <motion.div 
+    whileHover={{backgroundColor : hover == true && "#7443ff" , padding: "25px"}}
+    className={`bg-zinc-800 rounded-lg px-7 py-5 flex flex-col gap-2 ${width}`}>
       <div className="w-full flex justify-between">
         <span>Get In Touch</span>
         <FaArrowRight />
@@ -18,7 +22,7 @@ function Card({ width , start , para , btn ,hover}) {
         Contact us
       </button>}
       {para && <span className="pt-40">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</span>}
-    </div>
+    </motion.div>
   );
 }
 

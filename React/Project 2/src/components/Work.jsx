@@ -1,5 +1,4 @@
-import { useMotionValueEvent, useScroll } from "motion/react";
-import { data } from "motion/react-client";
+import { useScroll } from "motion/react";
 import { useState } from "react";
 
 function Work() {
@@ -30,13 +29,13 @@ function Work() {
     },
     {
       url: "https://assets-global.website-files.com/6334198f239547d0f9cd84b3/634ef0ac7e7179d210dc41f0_Summon.png",
-      top: "43%",
-      left: "40%",
+      top: "70%",
+      left: "45%",
       isActive: false,
     },
     {
       url: "https://assets-global.website-files.com/6334198f239547d0f9cd84b3/634ef0af108a465002975acd_Showcase%20Websites%20(1).png",
-      top: "60%",
+      top: "80%",
       left: "52%",
       isActive: false,
     },

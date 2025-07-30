@@ -2,12 +2,8 @@ import { Link, Routes, Route } from "react-router-dom";
 import Home from "./components/Home";
 import Show from "./components/Show";
 import About from "./components/About";
-import { useEffect } from "react";
 
 function App() {
-  
-  
-
   return (
     <div className="w-full h-screen ">
       <nav className="flex justify-center items-center gap-5 py-5">

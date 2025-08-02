@@ -26,6 +26,7 @@ function TopNav() {
       <i className="ri-search-line text-3xl text-white"></i>
 
       <input
+
         onChange={(e) => setQuery(e.target.value)}
         value={query}
         className="outline-none text-white rounded-3xl p-4 text-xl bg-zinc-700 w-[1000px]"
@@ -45,7 +46,7 @@ function TopNav() {
           {searches.map((s, i) => (
             <Link
               key={i}
-              to="#"
+              to={`/${s.media_type}/${s.id}`}
               className="bg-zinc-600 p-4 flex items-center gap-4 rounded-xl hover:bg-purple-500 transition-colors duration-200"
             >
               <img

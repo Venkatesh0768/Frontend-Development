@@ -4,7 +4,7 @@ import Loading from "./Loading";
 
 function Cards({ data }) {
   return (
-    <div className="w-full flex flex-wrap justify-center gap-6 bg-zinc-800 p-5">
+    <div className="w-full flex flex-wrap justify-center gap-6 bg-zinc-900 p-5">
       {data && data.length > 0 ? (
         data.map((d) => {
           const imageUrl =
@@ -47,14 +47,14 @@ function Cards({ data }) {
                 <p className="text-sm text-zinc-400 mt-2 flex-grow">
                   {d.overview
                     ? `${d.overview.slice(0, 80)}...`
-                    : "No description available."}
+                    : ""}
                 </p>
               </div>
             </Link>
           );
         })
       ) : (
-        <Loading/>
+        <Loading />
       )}
     </div>
   );

@@ -22,7 +22,6 @@ function Trending() {
   ];
 
   const [category, setCategory] = useState("all");
-
   const [duration, setDuration] = useState("day");
   const [trending, setTrending] = useState([]);
   const [page, setPage] = useState(1);
@@ -58,7 +57,7 @@ function Trending() {
     refershhandler();
   }, [category, duration]);
 
-  console.log(category);
+  
 
   return trending ? (
     <div className="w-full h-screen ">

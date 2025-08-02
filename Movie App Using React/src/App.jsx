@@ -6,6 +6,7 @@ import Popular from "./components/Popular";
 import Movies from "./components/Movies";
 import Tvshows from "./components/Tvshows";
 import People from "./components/People";
+import MovieDetails from "./components/MovieDetails";
 
 function App() {
   return (
@@ -16,7 +17,8 @@ function App() {
         <Route path="/popular" element={<Popular />}></Route>
         <Route path="/movies" element={<Movies />}></Route>
         <Route path="/tvshows" element={<Tvshows />}></Route>
-        <Route path="/people" element={<People />}></Route>
+  
+        <Route path="/:media_type/:id" element={<MovieDetails />} />
       </Routes>
     </div>
   );
